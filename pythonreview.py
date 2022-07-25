@@ -1,6 +1,6 @@
 def my_function(title, description):
-  a = {"title": title, "description": description, "likes": 0, "dislikes": 0, "comments":};
-  return a;
+  video = {"title": title, "description": description, "likes": 0, "dislikes": 0, "comments": {}}
+  return video
 
 
 def like(dictionary):
@@ -17,13 +17,13 @@ def dislike(dictionary):
     return dictionary
 
 
-def add_comment("video, username, comment_text"):
+def add_comment(video, username, comment_text):
   if "comments" in video.keys():
-    video["username": "comment_text"]
+    video["comments"][username] = comment_text
 
-    return videocd 
+    return video
 
-a = my_function(h, g)
+a = my_function("h", "g")
 like(a)
 dislike(a)
 print(a) 
